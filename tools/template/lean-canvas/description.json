@@ -1,0 +1,76 @@
+{
+    "name": "Lean Canvas Template",
+    "description": "A template for creating a Lean Canvas",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "title": {
+                "type": "string"
+            },
+            "problems": {
+                "description": "Top 3 problems of your customers",
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "existingAlternatives": {
+                "description": "How do your customers solve these problems today?",
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "solutions": {
+                "description": "How will you solve these problems?",
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "keyMetrics": {
+                "description": "What are the key numbers that tell you how your business is doing?",
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "uniqueValueProposition": {
+                "description": "Single, clear, compelling message that states why you are different and worth buying",
+                "type": "string"
+            },
+            "unfairAdvantage": {
+                "description": "Something you have that cannot be easily copied or bought",
+                "type": "string"                
+            },
+            "channels": {
+                "description": "How do you reach your customers?",
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "customerSegments": {
+                "description": "Who are your customers?",
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "costStructure": {
+                "description": "What are your fixed and variable costs?",
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "revenueStreams": {
+                "description": "How do you make money?",
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

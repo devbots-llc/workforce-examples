@@ -1,0 +1,175 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      h1 {
+        font-size: 20px;
+      }
+      h2 {
+        margin: 0px 5px;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        text-shadow: 2px 2px 3px rgba(33, 33, 33, 0.7);
+      }
+
+      #lean-canvas {
+        height: 90vh;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+      }
+      .row {
+        display: flex;
+        flex: 2;
+        flex-direction: row;
+      }
+      .row.bottom {
+        flex: 1;
+      }
+      .column {
+        flex: 1;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+      }
+      .section {
+        margin: 2px;
+        flex: 1;
+        border-radius: 5px;
+        border: 1px solid;
+        border-color: #9aa;
+        background: #acc;
+        box-shadow: 2px 2px 3px rgba(33, 33, 33, 0.7);
+      }
+      .block {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .block-item,
+      .block-string {
+        position: relative;
+        float: left;
+        margin: 5px;
+        background: #ffc;
+        padding: 0.5em;
+        max-width: 6em;
+        box-shadow: 4px 4px 5px rgba(33, 33, 33, 0.7);
+      }
+      .block-string {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>{{title}}</h1>
+    <div id="lean-canvas">
+      <div class="row">
+        <div class="column">
+          <div class="section" id="problems">
+            <h2>Problems</h2>
+            <ul class="block">
+              {{#each problems}}
+              <li class="block-item">{{this}}</li>
+              {{/each}}
+            </ul>
+          </div>
+          <div class="section" id="existing-alteratives">
+            <h2>Existing Alternatives</h2>
+            <ul class="block">
+              {{#each existingAlternatives}}
+              <li class="block-item">{{this}}</li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="section" id="solutions">
+            <h2>Solutions</h2>
+            <ul class="block">
+              {{#each solutions}}
+              <li class="block-item">{{this}}</li>
+              {{/each}}
+            </ul>
+          </div>
+          <div class="section" id="key-metrics">
+            <h2>Key Metrics</h2>
+            <ul class="block">
+              {{#each keyMetrics}}
+              <li class="block-item">{{this}}</li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="section" id="unique-value-proposition">
+            <h2>Unique Value Proposition</h2>
+            <p class="block-string">{{uniqueValueProposition}}</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="section" id="unfair-advantage">
+            <h2>Unfair Advantage</h2>
+            <p class="block-string">{{unfairAdvantage}}</p>
+          </div>
+          <div class="section" id="channels">
+            <h2>Channels</h2>
+            <ul class="block">
+              {{#each channels}}
+              <li class="block-item">{{this}}</li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="section" id="customer-segments">
+            <h2>Customer Segments</h2>
+            <ul class="block">
+              {{#each customerSegments}}
+              <li class="block-item">{{this}}</li>
+              {{/each}}
+            </ul>
+          </div>
+          <div class="section" id="early-adopters">
+            <h2>Early Adopters</h2>
+            <ul class="block">
+              {{#each earlyAdopters}}
+              <li class="block-item">{{this}}</li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row bottom">
+        <div class="column">
+          <div class="section" id="cost-structure">
+            <h2>Cost Structure</h2>
+            <ul class="block">
+              {{#each costStructure}}
+              <li class="block-item">{{this}}</li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="section" id="revenue-streams">
+            <h2>Revenue Streams</h2>
+            <ul class="block">
+              {{#each revenueStreams}}
+              <li class="block-item">{{this}}</li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
