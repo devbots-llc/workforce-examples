@@ -57,6 +57,13 @@
                     "type": "string"
                 }
             },
+            "earlyAdopters": {
+                "description": "Who are your early adopters?",
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
             "costStructure": {
                 "description": "What are your fixed and variable costs?",
                 "type": "array",
