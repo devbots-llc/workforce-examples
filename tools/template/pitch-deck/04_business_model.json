@@ -1,0 +1,20 @@
+{
+    "name": "Pitch Deck - Business Model",
+    "description": "Business model is important. You probably don’t know all the details yet, but you should know a lot of them. Lay it out.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "title": {
+                "type": "string",
+                "description": "Example. We make money on every deck"
+            },
+            "bullet_points": {
+                "type": "array",
+                "description": "Examples. 5 percent of all capital raised plus 1 percent royalty on all business revenue, that's 6 million dollars last year alone, marginal cost is 0.",
+                "items": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

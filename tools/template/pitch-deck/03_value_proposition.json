@@ -1,0 +1,20 @@
+{
+    "name": "Pitch Deck - Value Proposition",
+    "description": "Tell the investor what makes you so special, what makes this work, what your insights are.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "title": {
+                "type": "string",
+                "description": "Example. Out product works because of science"
+            },
+            "bullet_points": {
+                "type": "array",
+                "description": "Examples. time to market is 90 percent less, Edward Tufte approved, we pick better colors, have you heard of the power of 10x?",
+                "items": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

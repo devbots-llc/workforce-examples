@@ -1,0 +1,20 @@
+{
+    "name": "Pitch Deck - Problem Statement",
+    "description": "This is where you clearly state the problem. Particulars of how this problem impacts real world people/businesses are valuable.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "title": {
+                "type": "string",
+                "description": "Example. Founders build bad seed decks"
+            },
+            "bullet_points": {
+                "type": "array",
+                "description": "Examples. This wastes a huge amount of time, Bad seed decks mean they don't raise the money thye need, No money means companies are forced to survive on revenue",
+                "items": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

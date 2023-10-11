@@ -1,0 +1,20 @@
+{
+    "name": "Pitch Deck - Market",
+    "description": "What’s the market here? Is it going to be big? Will you make it big? How much money are you going to make off this thing? Convince the investor that they’re going to make lots of money with you.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "title": {
+                "type": "string",
+                "description": "Example. Future Growth"
+            },
+            "bullet_points": {
+                "type": "array",
+                "description": "Examples. There are 1000 slide decks made in SF every day, that's the first market but its slowed because of how hard it is to build decks, we make decks bigger better and easier which means more decks",
+                "items": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

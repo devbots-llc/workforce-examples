@@ -1,0 +1,20 @@
+{
+    "name": "Pitch Deck - Team",
+    "description": "Team! So important at seed. Talk about what makes your team particularly well suited to the problem. This should be about founders. Nobody cares about your advisors.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "title": {
+                "type": "string",
+                "description": "Example. Team"
+            },
+            "bullet_points": {
+                "type": "array",
+                "description": "Examples. Jeff - Omnipotent Engineer, delivers exactly when he says he will, 2 exits. Jane - Product Guru, 5 years at Facebook, 1 exit.",
+                "items": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

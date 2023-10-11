@@ -1,0 +1,20 @@
+{
+    "name": "Pitch Deck - Solution",
+    "description": "This is the solution. You want to explain what you do very clearly, in as few words as possible. Describe the concrete benefits you provide.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "title": {
+                "type": "string",
+                "description": "Example. Our product solves this problem"
+            },
+            "bullet_points": {
+                "type": "array",
+                "description": "Examples. fast to use, simple to explain, improves lives and cleans teeth",
+                "items": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

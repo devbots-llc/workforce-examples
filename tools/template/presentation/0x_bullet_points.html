@@ -1,0 +1,58 @@
+<!--
+    This document is a handlebars template that is a full HTML document including css.
+
+    It is designed to be a powerpoint slide that is used as the second slide in a pitch deck.
+
+    It should be a title with a set of bullet points
+    Example:
+    
+    Title: Founders build bad seed decks
+    - This wastes a huge amount of time
+    - Bad seed decks mean they don't raise the money they need
+    - No money means companies are forced to survive on revenue
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{title}}</title>
+    <style>
+      body {
+        background-color: #ffffff;
+        color: #000000;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 36px;
+        font-weight: 100;
+        text-align: center;
+      }
+      .container {
+        max-height: 768px;
+        max-width: 1200px;
+      }
+      .title {
+        font-size: 72px;
+        font-weight: 100;
+      }
+      .list {
+        font-size: 48px;
+        font-weight: 100;
+        text-align: left;
+        margin-left: 100px;
+        margin-top: 50px;
+      }
+      .list-item {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">{{title}}</div>
+      <div class="list">
+        {{#each bullet_points}}
+        <div class="list-item">• {{this}}</div>
+        {{/each}}
+      </div>
+    </div>
+  </body>
+</html>

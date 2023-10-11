@@ -1,0 +1,20 @@
+{
+    "name": "Pitch Deck - Ask",
+    "description": "Tell the investor how much money you need, and what it gets you. If you can lay out where you’ll be inside of a year, which should make you Series A ready, that’s powerful.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "title": {
+                "type": "string",
+                "description": "Example. What we need"
+            },
+            "bullet_points": {
+                "type": "array",
+                "description": "Examples. 1.5 million. This is for engineers and marketting. With this money we'll hit all the milestones for our next round within 2 days. Thanks.",
+                "items": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Pitch Deck Title Slide",
+    "description": "This is the title page. It has the name of your company, and a one line description of what you do.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "title": {
+                "type": "string",
+                "description": "Example. Seed deck template, Inc."
+            },
+            "subtitle": {
+                "type": "string",
+                "description": "Example. We make seed decks."
+            }
+        }
+    }
+}
